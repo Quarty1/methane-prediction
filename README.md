@@ -7,10 +7,10 @@ Predict methane emissions using cow behaviour
 flowchart LR
     CAM[720p Night Vision Camera]
     PI[Raspberry Pi 5]
-    YOLO[YOLOv8n - Behavior Detection]
+    YOLO[YOLOv8n Behavior Detection]
     AGG[Behavior Time Aggregation]
     IPCC[IPCC Tier 2 Methane Model]
-    OUT[Methane Prediction (g/day per cow)]
+    OUT[Methane Prediction grams per day per cow]
 
     CAM --> PI
     PI --> YOLO
@@ -18,5 +18,6 @@ flowchart LR
     AGG --> IPCC
     IPCC --> OUT
 ```
+
 
 
